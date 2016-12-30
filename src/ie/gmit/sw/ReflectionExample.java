@@ -1,6 +1,7 @@
 package ie.gmit.sw;
 
 import java.lang.reflect.*;
+import java.net.JarURLConnection;
 import java.util.Scanner;
 
 public class ReflectionExample {
@@ -8,7 +9,7 @@ public class ReflectionExample {
 private static String className;
 
  private static Class c;
- 
+
    public static void main(String args[]){
         if (args.length == 0) {
         	

@@ -8,6 +8,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 public class ReadinJarFile {
 	
+	private ObjectMap myMap;
+	
 	public static void main(String[] args) throws FileNotFoundException, IOException{
 		
 		JarInputStream in = new JarInputStream(new FileInputStream(new File("test-jar.jar")));
