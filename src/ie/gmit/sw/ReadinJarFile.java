@@ -10,7 +10,7 @@ public class ReadinJarFile {
 	
 	public static void main(String[] args) throws FileNotFoundException, IOException{
 		
-		JarInputStream in = new JarInputStream(new FileInputStream(new File("mylib.jar")));
+		JarInputStream in = new JarInputStream(new FileInputStream(new File("test-jar.jar")));
 		
 		JarEntry next = in.getNextJarEntry();
 		
