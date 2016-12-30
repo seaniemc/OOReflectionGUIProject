@@ -17,7 +17,7 @@ private static String className;
         	
         	className = reader.nextLine(); // Scans the nex
         	
-        	//System.out.println(className);
+        	
             
         }
         ClassLoader classLoader = ReflectionExample.class.getClassLoader();
@@ -25,6 +25,15 @@ private static String className;
         try {
             c = classLoader.loadClass(className);
             System.out.println("aClass.getName() = " + c.getName());
+            
+            //-------------//
+            ReflectionExample re = new ReflectionExample(c);
+            re.printConstructors();
+            re.printMethods();
+            re.getClass();
+            re.printFields();
+            re.createArray();
+            
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             System.exit(1);
