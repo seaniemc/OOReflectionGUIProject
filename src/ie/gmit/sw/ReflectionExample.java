@@ -8,6 +8,7 @@ public class ReflectionExample {
 private static String className;
 
  private static Class c;
+ 
    public static void main(String args[]){
         if (args.length == 0) {
         	
