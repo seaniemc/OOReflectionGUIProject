@@ -43,9 +43,7 @@ public class ReadinJarFile {
 				 }
 
 
-					 //System.out.println("Couldn't find class '" + name + "'"); // if class is not found
-					 //System.exit(1);
-				 // reflection
+					 
 				 System.out.println(list.size());
 			 }
 			 next = in.getNextJarEntry();
