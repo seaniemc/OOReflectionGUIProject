@@ -18,7 +18,6 @@ private static String className;
         	
         	className = reader.nextLine(); // Scans the nex
         	
-        	
             
         }
         ClassLoader classLoader = ReflectionExample.class.getClassLoader();
