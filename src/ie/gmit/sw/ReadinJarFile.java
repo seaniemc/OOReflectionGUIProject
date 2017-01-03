@@ -11,45 +11,52 @@ import java.io.IOException;
 
 public class ReadinJarFile {
 
-	private static ClassList list; 
+	private static ClassList list;
 
-	public static void main(String[] args) throws FileNotFoundException, IOException{
-		
-		list = new ClassList();
-		
-		JarInputStream in = new JarInputStream(new FileInputStream(new File("test-jar.jar")));
-		
-		JarEntry next = in.getNextJarEntry();
-		
-		while (next != null) 
-		{
-			 if (next.getName().endsWith(".class")) 
-			 {
-				 String name = next.getName().replaceAll("/", "\\.");
-				 
-				 name = name.replaceAll(".class", "");
-				 
-				 if (!name.contains("$")) name.substring(0, name.length() - ".class".length());
-				 
-			 	 System.out.println(name);
+	public ReadinJarFile(String jarName) throws IOException {
 
-				 Class queryClass;
-
-				 try {
-					 queryClass = Class.forName(name);
-					 list.add(queryClass);
-				 } catch (ClassNotFoundException e) {
-					 e.printStackTrace();
-				 }
-
-
-					 
-				 System.out.println(list.size());
-			 }
-			 next = in.getNextJarEntry();
-			 
-		}
-	
+		init(jarName);
 	}
+
+	public void init(String jarName) throws IOException {
+
+		list = new ClassList();
+
+		JarInputStream in = new JarInputStream(new FileInputStream(new File(jarName)));
+
+		JarEntry next = in.getNextJarEntry();
+
+		while (next != null)
+		{
+			if (next.getName().endsWith(".class"))
+			{
+				String name = next.getName().replaceAll("/", "\\.");
+
+				name = name.replaceAll(".class", "");
+
+				if (!name.contains("$")) name.substring(0, name.length() - ".class".length());
+
+				System.out.println(name);
+
+				Class queryClass = null;
+
+				try {
+					queryClass = Class.forName(name);
+					list.add(queryClass);
+				} catch (ClassNotFoundException e) {
+					e.printStackTrace();
+				}
+				//Class cls = queryClass;
+				ClassDetails clsD = new ClassDetails(queryClass);
+
+				System.out.println(list.size());
+			}
+			next = in.getNextJarEntry();
+
+		}
+	}
+
+	
+	//}
 	
 }
