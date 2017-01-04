@@ -13,12 +13,12 @@ public class ReadinJarFile {
 
 	private static ClassList list;
 
-	public ReadinJarFile(String jarName) throws IOException {
+	public ReadinJarFile(String jarName) throws IOException, NoSuchMethodException {
 
 		init(jarName);
 	}
 
-	public void init(String jarName) throws IOException {
+	public void init(String jarName) throws IOException, NoSuchMethodException {
 
 		list = new ClassList();
 
@@ -47,7 +47,7 @@ public class ReadinJarFile {
 					e.printStackTrace();
 				}
 				//Class cls = queryClass;
-				ClassDetails clsD = new ClassDetails(queryClass);
+				ClassDetails clsD = new ClassDetails(list);
 
 				System.out.println(list.size());
 			}

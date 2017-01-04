@@ -15,7 +15,6 @@ public class ClassList {
 		return list.add(arg0);
 	}
 
-
 	public void clear() {
 		list.clear();
 	}
@@ -24,8 +23,9 @@ public class ClassList {
 		return list.contains(arg0);
 	}
 
-	public Class get(int arg0) {
-		return list.get(arg0);
+	public Class getMyClass(int index) {
+
+		return list.get(index);
 	}
 
 	public boolean isEmpty() {
