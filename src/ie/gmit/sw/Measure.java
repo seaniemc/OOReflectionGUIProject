@@ -1,5 +1,8 @@
 package ie.gmit.sw;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Sean on 05/01/2017.
  */
@@ -8,6 +11,7 @@ public class Measure {
     private int efferentCoupling;
     private int afferentCoupling;
     private String className;
+
 
     public int getEfferentCoupling() {
         return efferentCoupling;
