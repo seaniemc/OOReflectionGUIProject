@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 public class ClassDetails {
 
     //private static ClassList classlist;
-    private Class myCla;
+    //private Class myCla;
     private int efferentCoup = 0;
 
     public ClassDetails(ClassList cls) throws NoSuchMethodException {
@@ -51,13 +51,13 @@ public class ClassDetails {
                 System.out.println("Fields: " + fie.getName());
                 efferentCoup++;
             }
-            myCla = cla;
+            //myCla = cla;
             Method[] classMethods = cla.getMethods();
 
 
             efferentCoup = 0;
         }
-        System.out.println(myCla.getName()+"Its efferent coupling" + efferentCoup);
+       // System.out.println(myCla.getName()+"Its efferent coupling" + efferentCoup);
 
     }
 }

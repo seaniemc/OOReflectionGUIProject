@@ -48,6 +48,7 @@ public class ReadinJarFile {
 				}
 				//Class cls = queryClass;
 				ClassDetails clsD = new ClassDetails(list);
+				Afferent aff = new Afferent(list);
 
 				System.out.println(list.size());
 			}
