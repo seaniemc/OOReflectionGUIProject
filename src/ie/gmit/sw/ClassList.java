@@ -20,6 +20,7 @@ public class ClassList {
 	}
 
 	public boolean contains(Object arg0) {
+
 		return list.contains(arg0);
 	}
 

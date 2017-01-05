@@ -10,8 +10,8 @@ import java.lang.reflect.Method;
 public class Afferent {
 
     private static Measure measure;
-    private String afferentName = " ";
-    private String efferentNmae;
+    private String afferentName ;
+    private String efferentName;
     private int afferentCoupling = 0;
     private int efferentCoupling = 0;
 
@@ -31,16 +31,17 @@ public class Afferent {
 
             for (int j = 0; j < list.size(); j++){
 
-                //this is the class which we inspect to see if it holds any references to class list.getMyClass(i);
+                //class which we inspect to see if it holds any references to class list.getMyClass(i);
+                //also used to perform the check for efferent coupling
                 Class inspecClass = list.getMyClass(j);
 
                 Class[] interfaces = inspecClass.getInterfaces();
 
-                //if the class implements any interfaces increment efferent 
+                //if the class implements any interfaces increment efferent
                 for(Class inter : interfaces){
 
                     efferentCoupling++;
-                    //if the interface mane is same as list.getMyClass(i) then increment afferent
+                    //if the interface name is same as list.getMyClass(i) then increment afferent
                     if(inter.getName() == cla.getName()){
                         afferentCoupling ++;
                     }
@@ -51,10 +52,16 @@ public class Afferent {
                 Class[] conParams;
 
                 for(Constructor c: cons){
-                   // System.out.println("Contructor: " + c.getName());
+
                     conParams = c.getParameterTypes();
 
                     for(Class par: conParams){
+
+                        //if the paramater name is on the list of classes ++
+                        if(list.contains(par.getName())){
+                            efferentCoupling ++;
+                        }
+
                         //if constructor params == cla.getName()) then increment
                         if( par.getName() == cla.getName()){
                             afferentCoupling++;
@@ -66,6 +73,11 @@ public class Afferent {
                 Field[] fields = inspecClass.getFields();
 
                 for(Field fie: fields ){
+
+                    //if the field name is on the list of classes ++
+                    if(list.contains(fie.getName()))
+                        efferentCoupling ++;
+
 
                     if(fie.getName() == inspecClass.getName())
                     afferentCoupling++;
@@ -82,13 +94,36 @@ public class Afferent {
 
                         afferentCoupling ++;
                     }
+
+                    params = meth.getParameterTypes();
+
+                    for(Class methodParams: params){
+
+                        if(list.contains(methodParams.getName())) {
+                            efferentCoupling++;
+                        }
+
+                        if(methodParams.getName() == inspecClass.getName()) {
+                            afferentCoupling++;
+                        }
+
+                    }
                 }
 
-                efferentNmae = inspecClass.getName();
+
+                efferentName = inspecClass.getName();
             }//end second for
+            measure.setClassName(efferentName);
+            measure.setEfferentCoupling(efferentCoupling);
+            efferentCoupling = 0;
+
             afferentName = cla.getName();
         }//end first for
-        // r
+
         measure.setClassName(afferentName);
+        measure.setAfferentCoupling(afferentCoupling);
+        afferentCoupling = 0;
+
+
     }//getAfferent
 }
