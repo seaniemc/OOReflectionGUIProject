@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
 /**
  * Created by Sean on 05/01/2017.
  */
-public class Afferent {
+public class CalculateCouplings {
 
     private static Measure measure;
     private String afferentName ;
@@ -15,7 +15,7 @@ public class Afferent {
     private int afferentCoupling = 0;
     private int efferentCoupling = 0;
 
-    public Afferent(ClassList list){
+    public CalculateCouplings(ClassList list){
 
         getAfferent(list);
     }

@@ -5,7 +5,6 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 
@@ -46,9 +45,7 @@ public class ReadinJarFile {
 				} catch (ClassNotFoundException e) {
 					e.printStackTrace();
 				}
-				//Class cls = queryClass;
-				ClassDetails clsD = new ClassDetails(list);
-				Afferent aff = new Afferent(list);
+				CalculateCouplings aff = new CalculateCouplings(list);
 
 				System.out.println(list.size());
 			}
