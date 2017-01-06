@@ -9,10 +9,12 @@ import java.lang.reflect.Method;
  */
 public class CalculateCouplings {
 
-    private static MeasureList mList;
+    private static MeasureList mList = new MeasureList();
     private static Measure measure;
+
     private String afferentName ;
     private String efferentName;
+
     private int afferentCoupling = 0;
     private int efferentCoupling = 0;
 
@@ -111,7 +113,6 @@ public class CalculateCouplings {
                     }
                 }
 
-
                 efferentName = inspecClass.getName();
                 measure.setClassName(efferentName);
                 measure.setEfferentCoupling(efferentCoupling);
@@ -130,6 +131,6 @@ public class CalculateCouplings {
 
         afferentCoupling = 0;
 
-    StablityMetric metric = new StablityMetric(list,mList);
+
     }//getAfferent
 }

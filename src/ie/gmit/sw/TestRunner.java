@@ -9,6 +9,6 @@ public class TestRunner {
 
     public static void main(String [] args) throws IOException, NoSuchMethodException {
 
-        ReadinJarFile jar = new ReadinJarFile("test-jar.jar");
+        ReadinJarFile jar = new ReadinJarFile("string-service.jar");
     }
 }

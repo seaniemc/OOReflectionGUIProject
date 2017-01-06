@@ -47,7 +47,8 @@ public class ReadinJarFile {
 				}
 				CalculateCouplings aff = new CalculateCouplings(list);
 
-				System.out.println(list.size());
+				//System.out.println(list.size());
+				//StablityMetric metric = new StablityMetric(list,mList);
 			}
 			next = in.getNextJarEntry();
 
