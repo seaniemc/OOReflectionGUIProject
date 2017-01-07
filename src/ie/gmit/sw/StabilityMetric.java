@@ -3,27 +3,32 @@ package ie.gmit.sw;
 /**
  * Created by Sean on 05/01/2017.
  */
-public class StablityMetric {
+public class StabilityMetric {
 
-    private ClassList list;
-    private MeasureList mList;
+    private StabilityList sList = new StabilityList();
 
     private double stabilityMetric = 0;
 
-    public StablityMetric(ClassList list, MeasureList mList){
+    public StabilityMetric(){
+        super();
+
+    }
+
+    public StabilityMetric(ClassList list, MeasureList mList){
         calculateMetric(list, mList);
     }
 
     public double getStabilityMetric() {
         return stabilityMetric;
     }
-    public void setStabilityMetric(double stabilityMetric) {
+
+    public void setStabilityMetric(String className,double stabilityMetric) {
         this.stabilityMetric = stabilityMetric;
     }
 
-    public void calculateMetric(ClassList list, MeasureList degres){
+    public StabilityList calculateMetric(ClassList list, MeasureList mList){
 
-        MeasureList mList = new MeasureList();
+        StabilityMetric stab = new StabilityMetric();
 
         for(int i = 0; i < list.size(); i++){
 
@@ -37,15 +42,19 @@ public class StablityMetric {
 
                     stabilityMetric  = ((double) mList.get(i).getEfferentCoupling() / ((double)mList.get(i).getAfferentCoupling()
                             + (double)mList.get(i).getEfferentCoupling()));
-                    setStabilityMetric(stabilityMetric);
+                    stab.setStabilityMetric(cla.getName(),stabilityMetric);
+                    sList.add(stab);
                 }else {
                     stabilityMetric = 0;
-                    setStabilityMetric(stabilityMetric);
+
+                    stab.setStabilityMetric(cla.getName(),stabilityMetric);
+                    sList.add(stab);
                 }
 
             }
-            System.out.println("StablityMetric.calculateMetric for Class" + cla.getName()+"Stability" + getStabilityMetric() );
-        }
+            System.out.println("StabilityMetric.calculateMetric Stability for" + getStabilityMetric() );
 
+        }
+        return sList;
     }
 }

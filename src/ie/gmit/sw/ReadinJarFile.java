@@ -11,13 +11,10 @@ import java.io.IOException;
 public class ReadinJarFile {
 
 	private static ClassList list;
+	//private static MeasureList mList;
 
-	public ReadinJarFile(String jarName) throws IOException, NoSuchMethodException {
 
-		init(jarName);
-	}
-
-	public void init(String jarName) throws IOException, NoSuchMethodException {
+	public ClassList init(String jarName) throws IOException, NoSuchMethodException {
 
 		list = new ClassList();
 
@@ -35,7 +32,7 @@ public class ReadinJarFile {
 
 				if (!name.contains("$")) name.substring(0, name.length() - ".class".length());
 
-				System.out.println(name);
+				//System.out.println(name);
 
 				Class queryClass = null;
 
@@ -45,14 +42,15 @@ public class ReadinJarFile {
 				} catch (ClassNotFoundException e) {
 					e.printStackTrace();
 				}
-				CalculateCouplings aff = new CalculateCouplings(list);
+				//CalculateCouplings aff = new CalculateCouplings(list);
 
-				//System.out.println(list.size());
-				//StablityMetric metric = new StablityMetric(list,mList);
+				//mList = new MeasureList();
+				//StabilityMetric metric = new StabilityMetric(list,mList);
 			}
 			next = in.getNextJarEntry();
 
 		}
+		return list;
 	}
 
 	

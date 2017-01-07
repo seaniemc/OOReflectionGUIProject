@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
  */
 public class CalculateCouplings {
 
-    private static MeasureList mList = new MeasureList();
+    private static MeasureList mList;
     private static Measure measure;
 
     private String afferentName ;
@@ -18,20 +18,20 @@ public class CalculateCouplings {
     private int afferentCoupling = 0;
     private int efferentCoupling = 0;
 
-    public CalculateCouplings(ClassList list){
-
-        getAfferent(list);
+    public CalculateCouplings(){
+        super();
     }
 
-    public void getAfferent(ClassList list){
-
+    public MeasureList getAfferent(ClassList list){
+        mList = new MeasureList();
         measure = new Measure();
+        //ClassList newList = new ClassList();
 
         for (int i = 0; i < list.size(); i++) {
 
             //Get the class needed for afferent inspection
             Class cla = list.getMyClass(i);
-
+            //ClassList list2 = new ClassList();
             for (int j = 0; j < list.size(); j++){
 
                 //class which we inspect to see if it holds any references to class list.getMyClass(i);
@@ -50,6 +50,7 @@ public class CalculateCouplings {
                     }
 
                 }//end interfaces
+                System.out.println("Afferent coupling Interfaces" +afferentCoupling + "Efferent coupling" +efferentCoupling);
 
                 Constructor[] cons = inspecClass.getConstructors();
                 Class[] conParams;
@@ -72,7 +73,7 @@ public class CalculateCouplings {
                     }
 
                 }//end Constructor params
-
+                System.out.println("Afferent coupling Constructor " +afferentCoupling + " Efferent coupling " +efferentCoupling);
                 Field[] fields = inspecClass.getFields();
 
                 for(Field fie: fields ){
@@ -85,7 +86,7 @@ public class CalculateCouplings {
                     if(fie.getName() == inspecClass.getName())
                     afferentCoupling++;
                 }//fields
-
+                System.out.println("Afferent coupling Fields " + afferentCoupling + " Efferent coupling " +efferentCoupling);
                 Method[] classMethods = inspecClass.getMethods();
                 Class[] params;
 
@@ -98,21 +99,8 @@ public class CalculateCouplings {
                         afferentCoupling ++;
                     }
 
-                    params = meth.getParameterTypes();
-
-                    for(Class methodParams: params){
-
-                        if(list.contains(methodParams.getName())) {
-                            efferentCoupling++;
-                        }
-
-                        if(methodParams.getName() == inspecClass.getName()) {
-                            afferentCoupling++;
-                        }
-
-                    }
                 }
-
+                System.out.println("Afferent coupling Methods " +afferentCoupling + " Efferent coupling " +efferentCoupling);
                 efferentName = inspecClass.getName();
                 measure.setClassName(efferentName);
                 measure.setEfferentCoupling(efferentCoupling);
@@ -120,17 +108,37 @@ public class CalculateCouplings {
                 mList.add(measure);
             }//end second for
 
+            //resets efferent coupling
             efferentCoupling = 0;
 
             afferentName = cla.getName();
             measure.setClassName(afferentName);
             measure.setAfferentCoupling(afferentCoupling);
             mList.add(measure);
+            System.out.println("Mlist size" +mList.size());
         }//end first for
 
+        //resets afferentCoupling
 
         afferentCoupling = 0;
 
-
+        return mList;
     }//getAfferent
+
+    public int getAfferent(ClassList list, String name){
+        int afferent = 0;
+
+        for (int i = 0; i < list.size(); i++) {
+
+            //Get the class needed for afferent inspection
+            Class cla = list.getMyClass(i);
+
+            if (cla.getName() == name) {
+                afferent = 1;
+            }
+
+            }
+
+        return afferent;
+    }
 }

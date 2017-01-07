@@ -9,7 +9,7 @@ import java.util.Set;
  */
 public class ClassMap {
 
-    private Map <ClassList, StablityMetric> classMap = new HashMap<ClassList, StablityMetric>();
+    private Map <ClassList, StabilityMetric> classMap = new HashMap<ClassList, StabilityMetric>();
 
     public int size() {
         return classMap.size();
@@ -27,15 +27,15 @@ public class ClassMap {
         return classMap.containsValue(value);
     }
 
-    public StablityMetric get(Object key) {
+    public StabilityMetric get(Object key) {
         return classMap.get(key);
     }
 
-    public StablityMetric put(ClassList key, StablityMetric value) {
+    public StabilityMetric put(ClassList key, StabilityMetric value) {
         return classMap.put(key, value);
     }
 
-    public StablityMetric remove(Object key) {
+    public StabilityMetric remove(Object key) {
         return classMap.remove(key);
     }
 
