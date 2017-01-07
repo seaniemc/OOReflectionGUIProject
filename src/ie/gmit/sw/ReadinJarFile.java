@@ -42,10 +42,7 @@ public class ReadinJarFile {
 				} catch (ClassNotFoundException e) {
 					e.printStackTrace();
 				}
-				//CalculateCouplings aff = new CalculateCouplings(list);
-
-				//mList = new MeasureList();
-				//StabilityMetric metric = new StabilityMetric(list,mList);
+				
 			}
 			next = in.getNextJarEntry();
 

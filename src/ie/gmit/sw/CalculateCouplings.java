@@ -12,8 +12,7 @@ public class CalculateCouplings {
     private static MeasureList mList;
     private static Measure measure;
 
-    private String afferentName ;
-    private String efferentName;
+    private String Name;
 
     private int afferentCoupling = 0;
     private int efferentCoupling = 0;
@@ -22,37 +21,34 @@ public class CalculateCouplings {
         super();
     }
 
-    public MeasureList getAfferent(ClassList list){
+    public MeasureList getEfferent(ClassList list){
         mList = new MeasureList();
         measure = new Measure();
-        //ClassList newList = new ClassList();
 
         for (int i = 0; i < list.size(); i++) {
 
             //Get the class needed for afferent inspection
             Class cla = list.getMyClass(i);
             //ClassList list2 = new ClassList();
-            for (int j = 0; j < list.size(); j++){
 
+           afferentCoupling = getAfferent(list, cla.getName());
                 //class which we inspect to see if it holds any references to class list.getMyClass(i);
                 //also used to perform the check for efferent coupling
-                Class inspecClass = list.getMyClass(j);
 
-                Class[] interfaces = inspecClass.getInterfaces();
+
+                Class[] interfaces = cla.getInterfaces();
 
                 //if the class implements any interfaces increment efferent
                 for(Class inter : interfaces){
 
-                    efferentCoupling++;
-                    //if the interface name is same as list.getMyClass(i) then increment afferent
-                    if(inter.getName() == cla.getName()){
-                        afferentCoupling ++;
+                    if(list.contains(inter)){
+                        efferentCoupling++;
                     }
 
                 }//end interfaces
                 System.out.println("Afferent coupling Interfaces" +afferentCoupling + "Efferent coupling" +efferentCoupling);
 
-                Constructor[] cons = inspecClass.getConstructors();
+                Constructor[] cons = cla.getConstructors();
                 Class[] conParams;
 
                 for(Constructor c: cons){
@@ -66,15 +62,11 @@ public class CalculateCouplings {
                             efferentCoupling ++;
                         }
 
-                        //if constructor params == cla.getName()) then increment
-                        if( par.getName() == cla.getName()){
-                            afferentCoupling++;
-                        }
                     }
 
                 }//end Constructor params
                 System.out.println("Afferent coupling Constructor " +afferentCoupling + " Efferent coupling " +efferentCoupling);
-                Field[] fields = inspecClass.getFields();
+                Field[] fields = cla.getFields();
 
                 for(Field fie: fields ){
 
@@ -83,44 +75,33 @@ public class CalculateCouplings {
                         efferentCoupling ++;
 
 
-                    if(fie.getName() == inspecClass.getName())
-                    afferentCoupling++;
                 }//fields
                 System.out.println("Afferent coupling Fields " + afferentCoupling + " Efferent coupling " +efferentCoupling);
-                Method[] classMethods = inspecClass.getMethods();
+                Method[] classMethods = cla.getMethods();
                 Class[] params;
 
                 for(Method meth: classMethods){
 
                     Class returnTypes = meth.getReturnType();
 
-                    if(meth.getReturnType().getName() == cla.getName()){
-
-                        afferentCoupling ++;
+                    if(list.contains(meth.getReturnType().getName())){
+                        efferentCoupling ++;
                     }
 
                 }
-                System.out.println("Afferent coupling Methods " +afferentCoupling + " Efferent coupling " +efferentCoupling);
-                efferentName = inspecClass.getName();
-                measure.setClassName(efferentName);
-                measure.setEfferentCoupling(efferentCoupling);
 
-                mList.add(measure);
-            }//end second for
-
-            //resets efferent coupling
-            efferentCoupling = 0;
-
-            afferentName = cla.getName();
-            measure.setClassName(afferentName);
+            Name = cla.getName();
+            measure.setClassName(Name);
+            measure.setEfferentCoupling(efferentCoupling);
             measure.setAfferentCoupling(afferentCoupling);
+
             mList.add(measure);
             System.out.println("Mlist size" +mList.size());
         }//end first for
 
-        //resets afferentCoupling
 
-        afferentCoupling = 0;
+        //resets efferent coupling
+        efferentCoupling = 0;
 
         return mList;
     }//getAfferent
@@ -133,11 +114,55 @@ public class CalculateCouplings {
             //Get the class needed for afferent inspection
             Class cla = list.getMyClass(i);
 
-            if (cla.getName() == name) {
-                afferent = 1;
+            Class[] interfaces = cla.getInterfaces();
+
+            //if the class implements any interfaces increment efferent
+            for(Class inter : interfaces){
+
+                //if the interface name is same as list.getMyClass(i) then increment afferent
+                if(inter.getName() == name){
+                    afferent ++;
+                }
+
+            }//end interfaces
+
+            Constructor[] cons = cla.getConstructors();
+            Class[] conParams;
+
+            for(Constructor c: cons) {
+
+                conParams = c.getParameterTypes();
+
+                for (Class par : conParams) {
+
+                    //if constructor params == cla.getName()) then increment
+                    if (par.getName() == name) {
+                        afferent++;
+                    }
+                }
             }
 
+            Field[] fields = cla.getFields();
+            for(Field fie: fields ){
+
+                if(fie.getName() == name)
+                    afferent++;
+            }//fields
+            //System.out.println("Afferent coupling Fields " + afferentCoupling + " Efferent coupling " +efferentCoupling);
+            Method[] classMethods = cla.getMethods();
+            Class[] params;
+
+            for(Method meth: classMethods){
+
+                Class returnTypes = meth.getReturnType();
+
+                if(meth.getReturnType().getName() == name){
+
+                    afferent ++;
+                }
+
             }
+        }
 
         return afferent;
     }

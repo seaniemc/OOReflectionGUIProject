@@ -8,23 +8,22 @@ import java.io.IOException;
 public class TestRunner {
 
     public static void main(String [] args) throws IOException, NoSuchMethodException {
-        //1st Read in Jar file
+        //1st create instance of ReadinJarFile
         ReadinJarFile jar = new ReadinJarFile();
 
+        //Create a new instance of ClassList
         ClassList list = new ClassList();
 
+        //Call jar.init Method and pass in Jr file name
         list = jar.init("test-jar.jar");
 
         CalculateCouplings cal = new CalculateCouplings();
 
         MeasureList mList = new MeasureList();
 
-        mList = cal.getAfferent(list);
-
-        //3rd get a copy of coupling list
+        mList = cal.getEfferent(list);
 
 
-        //4th calculate stability metric
         StabilityMetric stab = new StabilityMetric(list, mList);
     }
 }

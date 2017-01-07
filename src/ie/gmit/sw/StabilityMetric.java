@@ -8,6 +8,16 @@ public class StabilityMetric {
     private StabilityList sList = new StabilityList();
 
     private double stabilityMetric = 0;
+    private String className;
+
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
+    public String getClassName() {
+        return className;
+    }
+
 
     public StabilityMetric(){
         super();
@@ -22,7 +32,7 @@ public class StabilityMetric {
         return stabilityMetric;
     }
 
-    public void setStabilityMetric(String className,double stabilityMetric) {
+    public void setStabilityMetric(double stabilityMetric) {
         this.stabilityMetric = stabilityMetric;
     }
 
@@ -42,17 +52,21 @@ public class StabilityMetric {
 
                     stabilityMetric  = ((double) mList.get(i).getEfferentCoupling() / ((double)mList.get(i).getAfferentCoupling()
                             + (double)mList.get(i).getEfferentCoupling()));
-                    stab.setStabilityMetric(cla.getName(),stabilityMetric);
+                    stab.setStabilityMetric(stabilityMetric);
+                    stab.setClassName(cla.getName());
                     sList.add(stab);
                 }else {
                     stabilityMetric = 0;
 
-                    stab.setStabilityMetric(cla.getName(),stabilityMetric);
+                    stab.setStabilityMetric(stabilityMetric);
+                    stab.setClassName(cla.getName());
+
                     sList.add(stab);
                 }
 
             }
             System.out.println("StabilityMetric.calculateMetric Stability for" + getStabilityMetric() );
+            System.out.println("Stability list" + sList.size());
 
         }
         return sList;
