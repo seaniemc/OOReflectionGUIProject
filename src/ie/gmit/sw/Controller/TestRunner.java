@@ -8,8 +8,8 @@ import java.io.IOException;
 public class TestRunner {
 
     public static void main(String [] args) throws IOException, NoSuchMethodException {
-        //1st create instance of ReadinJarFile
-        ReadinJarFile jar = new ReadinJarFile();
+        //1st create instance of Readable
+        /*Readable jar = new ReadinJarFile();
 
         //Create a new instance of ClassList
         ClassList list = new ClassList();
@@ -17,16 +17,13 @@ public class TestRunner {
         //Call jar.init Method and pass in Jr file name
         list = jar.init("test-jar.jar");
 
-        //Create a new instance of map
         ClassMap map = new ClassMap();
-
         //create new instance of CalculateCouplings
         CalculateCouplings cal = new CalculateCouplings();
-
-        //getEfferent returns a HashMap
         map = cal.getEfferent(list);
 
-        map.values();
+        StabilityData stabD = new StabilityData(map);
+*/
 
     }
 }

@@ -1,5 +1,7 @@
 package ie.gmit.sw.GUIView;
 
+import ie.gmit.sw.Controller.*;
+import ie.gmit.sw.Controller.Readable;
 import ie.gmit.sw.GUIView.CustomControl;
 
 import javax.swing.*;
@@ -8,12 +10,14 @@ import javax.swing.border.BevelBorder;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
+import java.io.IOException;
 
 public class AppWindow {
 
 
 	private JFrame frame;
-	
+	private AppSummary appS;
+
 	public AppWindow(){
 		//Create a window for the application
 		frame = new JFrame();
@@ -24,7 +28,7 @@ public class AppWindow {
 		
         //The file panel will contain the file chooser
         JPanel top = new JPanel(new FlowLayout(FlowLayout.LEADING));
-        top.setBorder(new javax.swing.border.TitledBorder("Please Select Jar File"));
+        top.setBorder(new javax.swing.border.TitledBorder("Click Browse To Select Jar File"));
         top.setPreferredSize(new java.awt.Dimension(500, 100));
         top.setMaximumSize(new java.awt.Dimension(500, 100));
         top.setMinimumSize(new java.awt.Dimension(500, 100));
@@ -34,37 +38,82 @@ public class AppWindow {
 		txtFileName.setMaximumSize(new java.awt.Dimension(100, 30));
 		txtFileName.setMargin(new java.awt.Insets(2, 2, 2, 2));
 		txtFileName.setMinimumSize(new java.awt.Dimension(100, 30));
-		
+
+
+        //Choose jar file
 		JButton btnChooseFile = new JButton("Browse...");
-		btnChooseFile.setToolTipText("Select File to Encode");
+		btnChooseFile.setToolTipText("Please Select Jar File");
         btnChooseFile.setPreferredSize(new java.awt.Dimension(90, 30));
         btnChooseFile.setMaximumSize(new java.awt.Dimension(90, 30));
         btnChooseFile.setMargin(new java.awt.Insets(2, 2, 2, 2));
         btnChooseFile.setMinimumSize(new java.awt.Dimension(90, 30));
-		btnChooseFile.addActionListener(new java.awt.event.ActionListener() {
+		btnChooseFile.addActionListener(new java.awt.event.ActionListener()
+        {
             public void actionPerformed(ActionEvent evt) {
+
         		JFileChooser fc = new JFileChooser("./");
+
         		int returnVal = fc.showOpenDialog(frame);
+
             	if (returnVal == JFileChooser.APPROVE_OPTION) {
+
                 	File file = fc.getSelectedFile().getAbsoluteFile();
-                	String name = file.getAbsolutePath(); 
-                	txtFileName.setText(name);
+
+                	String name = file.getAbsolutePath();
+
+                    if(name.endsWith(".jar") == true){
+                        txtFileName.setText(name);
+                    }
+
                 	System.out.println("You selected the following file: " + name);
             	}
 			}
         });
 		
-		JButton btnOther = new JButton("Do Something");
+		JButton btnOther = new JButton("Calculate Stability");
 		btnOther.setToolTipText("Do Something");
 		btnOther.setPreferredSize(new java.awt.Dimension(150, 30));
 		btnOther.setMaximumSize(new java.awt.Dimension(150, 30));
 		btnOther.setMargin(new java.awt.Insets(2, 2, 2, 2));
 		btnOther.setMinimumSize(new java.awt.Dimension(150, 30));
 		btnOther.addActionListener(new java.awt.event.ActionListener() {
+
             public void actionPerformed(ActionEvent evt) {
-            	System.out.println("Do Something");
-            	
-			}
+            	//System.out.println("Do Something");
+                appS =  new AppSummary(frame, true);
+
+                Readable jar = new ReadinJarFile();
+
+                //Create a new instance of ClassList
+                ClassList list = new ClassList();
+
+                //Call jar.init Method and pass in Jr file name
+                try {
+                    list = jar.init(txtFileName.getText());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (NoSuchMethodException e) {
+                    e.printStackTrace();
+                }
+
+                ClassMap map = new ClassMap();
+                //create new instance of CalculateCouplings
+                CalculateCouplings cal = new CalculateCouplings();
+
+                map = cal.getEfferent(list);
+
+                StabilityData stabD = new StabilityData();
+                stabD.getData(map);
+
+                TypeSummaryTableModel tstm = appS.getTableModel();
+
+                tstm.setData(stabD.getData(map));
+
+                appS.setVisible(true);
+
+
+
+            }
         });
 		
         top.add(txtFileName);

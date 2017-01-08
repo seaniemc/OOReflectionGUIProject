@@ -35,7 +35,11 @@ public class AppSummary extends JDialog{
         c.add(tablePanel);
         c.add(buttonPanel);
 	}
-	
+
+	public TypeSummaryTableModel getTableModel(){
+
+		return tm;
+	} // getTableModel(
 	
 	private void createTable(){
 		tm = new TypeSummaryTableModel();
@@ -49,9 +53,9 @@ public class AppSummary extends JDialog{
 		for (int i = 0; i < table.getColumnCount(); i++){
 			column = table.getColumnModel().getColumn(i);
 			if (i == 0){
-				column.setPreferredWidth(60);
-				column.setMaxWidth(60);
-				column.setMinWidth(60);
+				column.setPreferredWidth(120);
+				column.setMaxWidth(120);
+				column.setMinWidth(120);
 			}else{
 				column.setPreferredWidth(100);
 				column.setMaxWidth(100);

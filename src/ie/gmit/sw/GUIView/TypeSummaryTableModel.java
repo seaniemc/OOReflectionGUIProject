@@ -5,15 +5,19 @@ public class TypeSummaryTableModel extends AbstractTableModel{
 	private static final long serialVersionUID = 777L;
 	private String[] cols = {"Class", "Stability Metric", "Efferent Coupling", "Afferent Coupling"};
 
-	private Object[][] data = {
+
+    private Object[][] data = {
 		{"Stuff 1", "Other Stuff 1", "Even More Stuff 1", ""}
 
 	};
 
-	public void  getData(Object[][] data) {
+	public void  setData(Object[][] data) {
 		this.data = data;
 	}
-	public int getColumnCount() {
+
+
+
+    public int getColumnCount() {
         return cols.length;
     }
 	
