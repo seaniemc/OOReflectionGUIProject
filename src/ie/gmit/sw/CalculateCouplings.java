@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
  */
 public class CalculateCouplings {
 
-    private static MeasureList mList;
+    private static ClassMap map;
     private static Measure measure;
 
     private String Name;
@@ -21,8 +21,12 @@ public class CalculateCouplings {
         super();
     }
 
-    public MeasureList getEfferent(ClassList list){
-        mList = new MeasureList();
+    public CalculateCouplings(ClassList mylist){
+        getEfferent(mylist);
+    }
+
+    public ClassMap getEfferent(ClassList list){
+        map = new ClassMap();
         measure = new Measure();
 
         for (int i = 0; i < list.size(); i++) {
@@ -36,75 +40,78 @@ public class CalculateCouplings {
                 //also used to perform the check for efferent coupling
 
 
-                Class[] interfaces = cla.getInterfaces();
+            Class[] interfaces = cla.getInterfaces();
 
-                //if the class implements any interfaces increment efferent
-                for(Class inter : interfaces){
+            //if the class implements any interfaces increment efferent
+            for(Class inter : interfaces){
 
-                    if(list.contains(inter)){
-                        efferentCoupling++;
-                    }
+                if(list.contains(inter)){
+                    efferentCoupling++;
+                }
 
-                }//end interfaces
-                System.out.println("Afferent coupling Interfaces" +afferentCoupling + "Efferent coupling" +efferentCoupling);
+            }//end interfaces
+            System.out.println("Afferent coupling Interfaces" +afferentCoupling + "Efferent coupling" +efferentCoupling);
 
-                Constructor[] cons = cla.getConstructors();
-                Class[] conParams;
+            Constructor[] cons = cla.getConstructors();
+            Class[] conParams;
 
-                for(Constructor c: cons){
+            for(Constructor c: cons){
 
-                    conParams = c.getParameterTypes();
+                conParams = c.getParameterTypes();
 
-                    for(Class par: conParams){
+                for(Class par: conParams){
 
-                        //if the paramater name is on the list of classes ++
-                        if(list.contains(par.getName())){
-                            efferentCoupling ++;
-                        }
-
-                    }
-
-                }//end Constructor params
-                System.out.println("Afferent coupling Constructor " +afferentCoupling + " Efferent coupling " +efferentCoupling);
-                Field[] fields = cla.getFields();
-
-                for(Field fie: fields ){
-
-                    //if the field name is on the list of classes ++
-                    if(list.contains(fie.getName()))
-                        efferentCoupling ++;
-
-
-                }//fields
-                System.out.println("Afferent coupling Fields " + afferentCoupling + " Efferent coupling " +efferentCoupling);
-                Method[] classMethods = cla.getMethods();
-                Class[] params;
-
-                for(Method meth: classMethods){
-
-                    Class returnTypes = meth.getReturnType();
-
-                    if(list.contains(meth.getReturnType().getName())){
+                    //if the paramater name is on the list of classes ++
+                    if(list.contains(par.getName())){
                         efferentCoupling ++;
                     }
 
                 }
 
+            }//end Constructor params
+            System.out.println("Afferent coupling Constructor " +afferentCoupling + " Efferent coupling " +efferentCoupling);
+            Field[] fields = cla.getFields();
+
+            for(Field fie: fields ){
+
+                //if the field name is on the list of classes ++
+                if(list.contains(fie.getName()))
+                    efferentCoupling ++;
+
+
+            }//fields
+            System.out.println("Afferent coupling Fields " + afferentCoupling + " Efferent coupling " +efferentCoupling);
+            Method[] classMethods = cla.getMethods();
+            Class[] params;
+
+            for(Method meth: classMethods){
+
+                Class returnTypes = meth.getReturnType();
+
+                if(list.contains(meth.getReturnType().getName())){
+                    efferentCoupling ++;
+                }
+
+            }
+
             Name = cla.getName();
             measure.setClassName(Name);
+
             measure.setEfferentCoupling(efferentCoupling);
             measure.setAfferentCoupling(afferentCoupling);
 
-            mList.add(measure);
-            System.out.println("Mlist size" +mList.size());
-            System.out.printf("contains  " + mList.contains(measure));
-        }//end first for
+            cla = list.getMyClass(i);
+
+            map.put(cla, measure);
+
+            System.out.println("Mlist size" + map.size());
+        }//end for
 
 
         //resets efferent coupling
         efferentCoupling = 0;
 
-        return mList;
+        return map;
     }//getAfferent
 
     public int getAfferent(ClassList list, String name){

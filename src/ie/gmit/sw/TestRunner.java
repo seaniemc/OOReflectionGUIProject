@@ -17,20 +17,16 @@ public class TestRunner {
         //Call jar.init Method and pass in Jr file name
         list = jar.init("test-jar.jar");
 
+        //Create a new instance of map
+        ClassMap map = new ClassMap();
+
+        //create new instance of CalculateCouplings
         CalculateCouplings cal = new CalculateCouplings();
 
-        MeasureList mList = new MeasureList();
+        //getEfferent returns a HashMap
+        map = cal.getEfferent(list);
 
-        mList = cal.getEfferent(list);
-        Measure myMeas = new Measure();
-        double stab;
-        for(int i = 0; i < mList.size(); i++){
+        map.values();
 
-
-            myMeas = mList.get(i);
-            stab = myMeas.getStability();
-
-            System.out.println(stab);
-        }
     }
 }

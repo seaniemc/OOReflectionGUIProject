@@ -1,15 +1,15 @@
 package ie.gmit.sw;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 /**
- * Created by Sean on 05/01/2017.
+ * Created by Sean on 08/01/2017.
  */
 public class ClassMap {
 
-    private Map <ClassList, StabilityMetric> classMap = new HashMap<ClassList, StabilityMetric>();
+    private Map<Class, Measure> classMap = new HashMap<>();
 
     public int size() {
         return classMap.size();
@@ -27,15 +27,15 @@ public class ClassMap {
         return classMap.containsValue(value);
     }
 
-    public StabilityMetric get(Object key) {
+    public Measure get(Object key) {
         return classMap.get(key);
     }
 
-    public StabilityMetric put(ClassList key, StabilityMetric value) {
+    public Measure put(Class key, Measure value) {
         return classMap.put(key, value);
     }
 
-    public StabilityMetric remove(Object key) {
+    public Measure remove(Object key) {
         return classMap.remove(key);
     }
 
@@ -43,11 +43,7 @@ public class ClassMap {
         classMap.clear();
     }
 
-    public Set<ClassList> keySet() {
-        return classMap.keySet();
+    public Collection<Measure> values() {
+        return classMap.values();
     }
-
-
-
-
 }
