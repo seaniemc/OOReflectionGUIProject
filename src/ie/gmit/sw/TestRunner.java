@@ -22,8 +22,15 @@ public class TestRunner {
         MeasureList mList = new MeasureList();
 
         mList = cal.getEfferent(list);
+        Measure myMeas = new Measure();
+        double stab;
+        for(int i = 0; i < mList.size(); i++){
 
 
-        StabilityMetric stab = new StabilityMetric(list, mList);
+            myMeas = mList.get(i);
+            stab = myMeas.getStability();
+
+            System.out.println(stab);
+        }
     }
 }

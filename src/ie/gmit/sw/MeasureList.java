@@ -22,8 +22,8 @@ public class MeasureList {
         return list.contains(o);
     }
 
-    public boolean add(Measure measure) {
-        return list.add(measure);
+    public boolean add(Measure arg0) {
+        return list.add(arg0);
     }
 
     public boolean remove(Object o) {

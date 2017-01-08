@@ -36,4 +36,17 @@ public class Measure {
     public void setClassName(String className) {
         this.className = className;
     }
+
+    public double getStability(){
+
+        double stabilityMetric = 0.0;
+
+        if(getEfferentCoupling() > 0){
+
+            stabilityMetric  = ((double) getEfferentCoupling() / ((double)getAfferentCoupling()
+                    + (double)getEfferentCoupling()));
+        }
+
+        return stabilityMetric;
+    }
 }

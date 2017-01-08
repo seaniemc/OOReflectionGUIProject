@@ -6,8 +6,8 @@ package ie.gmit.sw;
 public class StabilityMetric {
 
     private StabilityList sList = new StabilityList();
-
-    private double stabilityMetric = 0;
+    private Measure my;
+    private double stabilityMetric = 0.0;
     private String className;
 
     public void setClassName(String className) {
@@ -25,7 +25,7 @@ public class StabilityMetric {
     }
 
     public StabilityMetric(ClassList list, MeasureList mList){
-        calculateMetric(list, mList);
+        //calculateMetric(list, mList);
     }
 
     public double getStabilityMetric() {
@@ -36,22 +36,23 @@ public class StabilityMetric {
         this.stabilityMetric = stabilityMetric;
     }
 
-    public StabilityList calculateMetric(ClassList list, MeasureList mList){
+    /*public StabilityList calculateMetric(ClassList list, MeasureList mList){
 
         StabilityMetric stab = new StabilityMetric();
 
         for(int i = 0; i < list.size(); i++){
 
             Class cla = list.getMyClass(i);
+            cla.getName();
+            my = mList.get(i);
+            my.getClassName();
 
-            mList.get(i).getClassName();
-
-            if(cla.getName() == mList.get(i).getClassName()){
+           // if(cla.getName() == my){
 
                 if(mList.get(i).getEfferentCoupling() > 0){
 
-                    stabilityMetric  = ((double) mList.get(i).getEfferentCoupling() / ((double)mList.get(i).getAfferentCoupling()
-                            + (double)mList.get(i).getEfferentCoupling()));
+                    stabilityMetric  = ((double) my.getEfferentCoupling() / ((double)my.getAfferentCoupling()
+                            + (double)my.getEfferentCoupling()));
                     stab.setStabilityMetric(stabilityMetric);
                     stab.setClassName(cla.getName());
                     sList.add(stab);
@@ -68,7 +69,7 @@ public class StabilityMetric {
             System.out.println("StabilityMetric.calculateMetric Stability for" + getStabilityMetric() );
             System.out.println("Stability list" + sList.size());
 
-        }
+        }//
         return sList;
-    }
+    }*/
 }

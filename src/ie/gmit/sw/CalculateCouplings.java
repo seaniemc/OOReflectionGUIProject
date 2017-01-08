@@ -97,6 +97,7 @@ public class CalculateCouplings {
 
             mList.add(measure);
             System.out.println("Mlist size" +mList.size());
+            System.out.printf("contains  " + mList.contains(measure));
         }//end first for
 
 

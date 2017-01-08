@@ -42,7 +42,7 @@ public class ReadinJarFile {
 				} catch (ClassNotFoundException e) {
 					e.printStackTrace();
 				}
-				
+
 			}
 			next = in.getNextJarEntry();
 
@@ -50,7 +50,4 @@ public class ReadinJarFile {
 		return list;
 	}
 
-	
-	//}
-	
 }
