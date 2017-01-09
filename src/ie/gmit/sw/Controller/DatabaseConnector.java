@@ -9,7 +9,7 @@ import com.db4o.Db4oEmbedded;
 import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;
 
- public class DatabaseConector
+ public class DatabaseConnector
 {
     private ObjectContainer db;
 
@@ -23,15 +23,11 @@ import com.db4o.ObjectSet;
     public ObjectSet<Measurement> retrieveAll()
     {
 
-        // Get data from database and store in record
+        // Store db data in Measurement
         ObjectSet<Measurement> measureRecord = db.query(Measurement.class);
 
         return measureRecord;
 
-    }// End method retrieveAll
+    }//end method
 
-}// End class DatabaseOperations
-/* {
-
-
-}*/
+}// end class

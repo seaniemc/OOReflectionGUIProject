@@ -8,7 +8,7 @@ public class TypeSummaryTableModel extends AbstractTableModel{
 
 
     private Object[][] data = {
-		{"Stuff 1", "Other Stuff 1", "Even More Stuff 1", ""}
+		{"Class", "Stability Metric", "Efferent Coupling", "Afferent Coupling"}
 
 	};
 

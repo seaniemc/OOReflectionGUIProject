@@ -21,7 +21,7 @@ public class Measurement {
     public Measurement(){
         super();
     }
-    
+
     public int getEfferentCoupling() {
         return efferentCoupling;
     }

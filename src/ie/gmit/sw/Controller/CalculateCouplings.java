@@ -32,7 +32,7 @@ public class CalculateCouplings {
         //cycle through the list
         for (int i = 0; i < list.size(); i++) {
 
-            measure = new Measurement();
+
             //Get the class needed for efferent inspection
             Class cla = list.getMyClass(i);
 
@@ -99,13 +99,13 @@ public class CalculateCouplings {
             Name = cla.getName();
 
             //pass the the class name into setClassName
-            measure.setClassName(Name);
+            /*measure;
 
             //pass in the efferentCoupling for the class
-            measure.setEfferentCoupling(efferentCoupling);
+            measure.setEfferentCoupling();
             //pass in the afferentCoupling for the class
-            measure.setAfferentCoupling(afferentCoupling);
-
+            measure.setAfferentCoupling();*/
+            measure = new Measurement(efferentCoupling,afferentCoupling,Name);
             //System.out.println(measure.getStability());
             cla = list.getMyClass(i);
 
