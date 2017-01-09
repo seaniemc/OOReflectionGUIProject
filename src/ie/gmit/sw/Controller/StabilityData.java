@@ -6,7 +6,7 @@ import ie.gmit.sw.Model.Measurement;
 /**
  * Created by Sean on 08/01/2017.
  */
-public class StabilityData {
+public class StabilityData  {
 
     //private ClassMap map;
     public StabilityData (ClassMap map){
@@ -16,10 +16,8 @@ public class StabilityData {
         super();
     }
 
+
     public Object[][] getData(ClassMap map) {
-
-        //map = new ClassMap();
-
         int i = 0;
         Object[][] data = new Object[map.size()][4];
 
@@ -36,5 +34,6 @@ public class StabilityData {
 
         return data;
     }
+
 
 }
