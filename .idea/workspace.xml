@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84b30105-5408-4460-8f12-a59d3a334b00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/StabilityData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/CalculateCouplings.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/CalculateCouplings.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/TestRunner.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/TestRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/TypeSummaryTableModel.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/TypeSummaryTableModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/Runner.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/Runner.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/CalculateCouplings.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/CalculateCouplings.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/TestRunner.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/TestRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppSummary.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppSummary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppWindow.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/TypeSummaryTableModel.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/TypeSummaryTableModel.java" />
     </list>
     <ignored path="OOProjectGui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,17 +33,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AppWindow.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AppWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="104" column="58" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="58" />
+            <state relative-caret-position="68">
+              <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1789#2428#0" expanded="true" />
-                <element signature="e#2427#2428#0" expanded="true" />
-                <element signature="e#2800#4002#0" expanded="true" />
-                <element signature="e#4001#4002#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,16 +48,10 @@
       <file leaf-file-name="Measurement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Model/Measurement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
+            <state relative-caret-position="136">
               <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#674#675#0" expanded="true" />
-                <element signature="e#706#707#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,8 +60,8 @@
       <file leaf-file-name="CalculateCouplings.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/CalculateCouplings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+            <state relative-caret-position="186">
+              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,9 +72,12 @@
       <file leaf-file-name="ClassMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/ClassMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="83">
               <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,7 +85,7 @@
       <file leaf-file-name="ClassList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/ClassList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="219">
               <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="e#674#675#0" expanded="true" />
@@ -104,15 +95,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppSummary.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppSummary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppSummary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
+            <state relative-caret-position="327">
               <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2410#2521#0" expanded="true" />
-                <element signature="e#2520#2521#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,7 +110,7 @@
       <file leaf-file-name="TypeSummaryTableModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/TypeSummaryTableModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="68">
               <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
               <folding>
                 <element signature="e#405#406#0" expanded="true" />
@@ -144,8 +133,8 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -154,14 +143,12 @@
       <file leaf-file-name="StabilityData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/StabilityData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="17">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#258#259#0" expanded="true" />
                 <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,8 +157,8 @@
       <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="25" column="2" selection-start-line="11" selection-start-column="8" selection-end-line="25" selection-end-column="2" />
+            <state relative-caret-position="89">
+              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -224,14 +211,14 @@
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/ReflectionExample.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/CustomControl.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Model/Measurement.java" />
-        <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/CalculateCouplings.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/ClassMap.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/TypeSummaryTableModel.java" />
-        <option value="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/StabilityData.java" />
-        <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/TestRunner.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppWindow.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppSummary.java" />
+        <option value="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java" />
+        <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/CalculateCouplings.java" />
       </list>
     </option>
   </component>
@@ -271,7 +258,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -358,10 +344,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -908,15 +895,17 @@
       <workItem from="1483716633411" duration="8717000" />
       <workItem from="1483799892757" duration="10761000" />
       <workItem from="1483878375424" duration="5537000" />
-      <workItem from="1483887067826" duration="12674000" />
+      <workItem from="1483887067826" duration="14307000" />
+      <workItem from="1483906569981" duration="616000" />
+      <workItem from="1483956704889" duration="6399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103954000" />
+    <option name="totallyTimeSpent" value="112602000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1370" height="735" extended-state="1" />
+    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -938,7 +927,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2511144" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.089153044" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -962,37 +951,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/StabilityData.java</url>
-          <line>29</line>
+          <url>file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/CalculateCouplings.java</url>
+          <line>121</line>
           <properties />
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/StabilityData.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/StabilityData.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/StabilityData.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/StabilityData.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="81" />
+          <option name="timeStamp" value="108" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="83" />
+      <option name="time" value="109" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1001,138 +966,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReadinJarFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/CalculateCouplings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="133" column="4" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReadinJarFile.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/TestRunner.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/CalculateCouplings.java" />
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/MeasureList.java" />
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Measurement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassMap.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Measurement.java" />
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/StabilityMetric.java" />
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReadinJarFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassList.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReadinJarFile.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/TestRunner.java" />
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassDetails.java" />
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReflectionExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="83" column="61" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReadinJarFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassList.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReflectionExample.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReadinJarFile.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/TestRunner.java" />
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassDetails.java" />
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReflectionExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="83" column="61" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReadinJarFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassList.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReflectionExample.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReadinJarFile.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassList.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/net/URLClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
@@ -1141,14 +994,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Runner.java" />
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReflectionExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1358">
-          <caret line="83" column="61" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReflectionExample.java" />
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Measureable.java" />
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassDetails.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/ArrayList.java">
@@ -1161,70 +1007,14 @@
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/MeasureList.java" />
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/StabilityMetric.java" />
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/StabilityList.java" />
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReadinJarFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Readable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Measurement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/CalculateCouplings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/Measurement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/TestRunner.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ReadinJarFile.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Readable.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Measurement.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassMap.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/ClassList.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/CalculateCouplings.java" />
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/Measurement.java" />
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/Readable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1233,14 +1023,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/ReflectionExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/ReflectionExample.java" />
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/ReadinJarFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1266,74 +1049,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Model/Measurement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/ClassList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/ClassMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/StabilityData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="25" column="2" selection-start-line="11" selection-start-column="8" selection-end-line="25" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/TypeSummaryTableModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="68">
           <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
           <folding>
             <element signature="e#405#406#0" expanded="true" />
@@ -1352,10 +1070,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/StabilityData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/ClassMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/ClassList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Model/Measurement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/CalculateCouplings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+        <state relative-caret-position="186">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1364,26 +1152,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="104" column="58" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="58" />
+        <state relative-caret-position="68">
+          <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1789#2428#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2800#4002#0" expanded="true" />
-            <element signature="e#4001#4002#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppSummary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2410#2521#0" expanded="true" />
-            <element signature="e#2520#2521#0" expanded="true" />
           </folding>
         </state>
       </provider>

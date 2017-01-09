@@ -9,7 +9,7 @@ public class TestRunner {
 
     public static void main(String [] args) throws IOException, NoSuchMethodException {
         //1st create instance of Readable
-        /*Readable jar = new ReadinJarFile();
+        Readable jar = new ReadinJarFile();
 
         //Create a new instance of ClassList
         ClassList list = new ClassList();
@@ -22,8 +22,9 @@ public class TestRunner {
         CalculateCouplings cal = new CalculateCouplings();
         map = cal.getEfferent(list);
 
-        StabilityData stabD = new StabilityData(map);
-*/
+        StabilityData stabD = new StabilityData();
+        stabD.getData(map);
+
 
     }
 }

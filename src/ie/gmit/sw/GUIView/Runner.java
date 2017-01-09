@@ -10,6 +10,5 @@ public class Runner {
 				new AppWindow();
 			}
 		});
-		TestRunner test = new TestRunner();
 	}
 }
