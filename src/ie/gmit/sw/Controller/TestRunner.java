@@ -25,6 +25,7 @@ public class TestRunner {
         StabilityData stabD = new StabilityData();
         stabD.getData(map);
 
+        PopulateAdjacency adj = new PopulateAdjacency(list);
 
     }
 }

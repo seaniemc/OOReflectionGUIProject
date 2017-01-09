@@ -1,5 +1,8 @@
 package ie.gmit.sw.Controller;
 
+import ie.gmit.sw.Model.Measurement;
+
+import java.lang.reflect.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,8 +11,7 @@ import java.util.List;
  */
 public class PopulateAdjacency {
     private AdjacencyList adList;
-
-    List<Class> dependancies = new ArrayList<>();
+    //private DependancyList depList;
 
 
     public PopulateAdjacency(ClassList list){
@@ -19,8 +21,120 @@ public class PopulateAdjacency {
         super();
     }
 
-    public void fillList (ClassList list){
+    public AdjacencyList fillList (ClassList list){
+
+        adList = new AdjacencyList();
+
+        for (int i = 0; i < list.size(); i++) {
+
+            List<Class> depList = new ArrayList<Class>();
+            //Get the class needed for efferent inspection
+            Class cla = list.getMyClass(i);
+
+            if(!(cla.isInterface() || Modifier.isAbstract(cla.getModifiers()))){
+                depList.add(cla);
+            }
+            //get the interfaces from the class
+            Class[] interfaces = cla.getInterfaces();
+
+            //if the class implements any interfaces increment efferent
+            for(Class inter : interfaces){
+
+                //if the interface is part of the list
+                if(list.contains(inter)){
+                    depList.add(inter);
+                }
+
+            }//end interfaces
+
+            if(!cla.isInterface()){ // if class is not an interface
+
+                Class sclass = cla.getSuperclass();
+
+                if(list.contains(sclass)){
+
+                    depList.add(sclass);
+                }
+
+            }
+            Constructor[] cons = cla.getConstructors();
+            Class[] conParams;
+
+            for(Constructor c: cons){
+
+                conParams = c.getParameterTypes();
+
+                for(Class par: conParams){
+
+                    if(list.contains(par.getName())){
+                        depList.add(par);
+                    }
+
+                }
+
+            }//end Constructor params
+
+            Field[] fields = cla.getDeclaredFields();
+
+            for(Field fie: fields ){
+
+                Type t = fie.getType();
+                //if the field name is on the list of classes ++
+                if(list.contains(t.getClass())){
+                    depList.add(t.getClass());
+                }
 
 
+
+            }//fields
+
+            Constructor constrs[] = cla.getDeclaredConstructors();
+
+            if(constrs.length > 0){
+                for(Constructor constr : constrs){
+                    Class p[] = constr.getParameterTypes();
+                    if(p.length > 0){
+                        for(Class item : p){
+                            if(list.contains(item)){
+                                depList.add(item);
+                            }
+                        }
+                    }
+                }
+            }
+
+            //get the methods for the class
+            Method[] classMethods = cla.getMethods();
+            Class[] params;
+
+            //
+            for(Method meth: classMethods){
+
+                Class returnTypes = meth.getReturnType();
+
+                if(list.contains(meth.getReturnType().getName())){
+
+                    depList.add(returnTypes);
+                }
+
+
+
+                params = meth.getParameterTypes(); //Get method parameters
+                for(Class mp : params){
+
+                    //System.out.println("Method Param: " + mp.getName());
+
+                    if(list.contains(mp)){
+
+                        // add class to adjacency list (ie increment outdegree)
+                        depList.add(mp);
+
+                    } // if
+                } // foreach
+            }
+
+            adList.put(cla, depList);
+        }//end for
+        return adList;
     }
 }
