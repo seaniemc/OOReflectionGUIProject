@@ -29,7 +29,6 @@ public class CalculateCouplings {
     public ClassMap getEfferent(ClassList list){
         map = new ClassMap();
 
-
         //cycle through the list
         for (int i = 0; i < list.size(); i++) {
 

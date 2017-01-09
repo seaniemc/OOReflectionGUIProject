@@ -2,6 +2,7 @@ package ie.gmit.sw.GUIView;
 
 import javax.swing.table.*;
 public class TypeSummaryTableModel extends AbstractTableModel{
+
 	private static final long serialVersionUID = 777L;
 	private String[] cols = {"Class", "Stability Metric", "Efferent Coupling", "Afferent Coupling"};
 

@@ -12,7 +12,16 @@ public class Measurement {
     private int afferentCoupling;
     private String className;
 
+    public Measurement(int efferentCoupling, int afferentCoupling, String className){
+        this.efferentCoupling = efferentCoupling;
+        this.afferentCoupling = afferentCoupling;
+        this.className = className;
+    }
 
+    public Measurement(){
+        super();
+    }
+    
     public int getEfferentCoupling() {
         return efferentCoupling;
     }
