@@ -23,6 +23,7 @@ java -cp ./bin:./lib/test-jar.jar ie.gmit.sw.GUIView.Runner ./lib/test-jar.jar
 
 ##Design Pattern and Features
 
+####MVC
 The program follows the MVC patern. As we are using a GUI for the application the MVC pattern works quiet well. 
 The project structure is as follows
 
@@ -52,3 +53,16 @@ OOProjectGui
     |--Measurement
       
 ```
+
+####Strategy
+In Strategy pattern, a class behavior or its algorithm can be changed at run time. By using this pattern we could easily 
+create classes which would implement the Readable interface and could import different file types e.g zip.
+
+```
+public interface Readable {
+    ClassList init(String var1) throws IOException, NoSuchMethodException;
+}
+
+```
+
+
