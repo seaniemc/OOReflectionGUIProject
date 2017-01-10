@@ -22,7 +22,7 @@ public class TestRunner {
         CalculateCouplings cal = new CalculateCouplings();
         map = cal.getEfferent(list);
 
-        StabilityData stabD = new StabilityData();
+        Data stabD = new Data();
         stabD.getData(map);
 
         PopulateAdjacency adj = new PopulateAdjacency(list);

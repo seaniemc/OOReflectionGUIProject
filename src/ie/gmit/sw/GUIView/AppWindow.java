@@ -2,7 +2,6 @@ package ie.gmit.sw.GUIView;
 
 import ie.gmit.sw.Controller.*;
 import ie.gmit.sw.Controller.Readable;
-import ie.gmit.sw.GUIView.CustomControl;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
@@ -103,7 +102,7 @@ public class AppWindow {
 
                 map = cal.getEfferent(list);
 
-                StabilityData stabD = new StabilityData();
+                Data stabD = new Data();
                 stabD.getData(map);
 
                 TypeSummaryTableModel tstm = appS.getTableModel();
@@ -168,7 +167,7 @@ public class AppWindow {
 
                 map = pop.fillList(list);
 
-                DependancyData data = new DependancyData();
+                Data data = new Data();
                 data.getAdjacData(map);
 
                 AdjacentSummaryTable ast = adJS.getTableModel();

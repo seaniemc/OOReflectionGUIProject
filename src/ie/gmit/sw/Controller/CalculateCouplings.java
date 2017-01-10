@@ -1,5 +1,6 @@
 package ie.gmit.sw.Controller;
 
+import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -183,4 +184,5 @@ public class CalculateCouplings {
 
         return afferent;
     }
+
 }

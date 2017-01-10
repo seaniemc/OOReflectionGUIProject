@@ -3,16 +3,19 @@ package ie.gmit.sw.Controller;
 import ie.gmit.sw.GUIView.TypeSummaryTableModel;
 import ie.gmit.sw.Model.Measurement;
 
+import java.util.Iterator;
+import java.util.Map;
+
 /**
  * Created by Sean on 08/01/2017.
  */
-public class StabilityData  {
+public class Data {
 
     //private ClassMap map;
-    public StabilityData (ClassMap map){
+    public Data(ClassMap map){
         getData(map);
     }
-    public StabilityData(){
+    public Data(){
         super();
     }
 
@@ -35,5 +38,21 @@ public class StabilityData  {
         return data;
     }
 
+    public Object[][] getAdjacData(AdjacencyList aList) {
+        int i = 0;
+        Object[][] data = new Object[aList.size()][2];
+
+
+        Iterator entries = aList.entrySet().iterator();
+        while (entries.hasNext()) {
+            Map.Entry thisEntry = (Map.Entry) entries.next();
+            data[i][0] = thisEntry.getKey();
+            data[i][1] = thisEntry.getValue();
+
+            i++;
+        }
+
+        return data;
+    }
 
 }
