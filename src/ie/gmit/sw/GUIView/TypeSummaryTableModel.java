@@ -7,23 +7,15 @@ public class TypeSummaryTableModel extends AbstractTableModel{
 
 	private static final long serialVersionUID = 777L;
 	private String[] cols = {"Class", "Stability Metric", "Efferent Coupling", "Afferent Coupling"};
-    private  String[] cols2 = {"Class", "Adjacency List"};
 
     private Object[][] data = {
 		{"Class", "Stability Metric", "Efferent Coupling", "Afferent Coupling"}
 
 	};
 
-	private Object[][] adjacData = {
-        {"Class", "Adjacency List"}
-    };
 	public void  setData(Object[][] data) {
 		this.data = data;
 	}
-
-    public void setAdjacData(Object[][] adjacData){
-        this.adjacData = adjacData;
-    }
 
     public int getColumnCount() {
         return cols.length;

@@ -1,15 +1,17 @@
 package ie.gmit.sw.Controller;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by Sean on 09/01/2017.
  */
 public class AdjacencyList {
-    private HashMap<Class, List<Class>> adjacencyList = new HashMap<>();
+
+    private Map<Class, List<Class>> adjacencyList = new HashMap<>();
+
+    public Set<Map.Entry<Class, List<Class>>> entrySet() {
+        return adjacencyList.entrySet();
+    }
 
     public int size() {
         return adjacencyList.size();
@@ -20,6 +22,7 @@ public class AdjacencyList {
     }
 
     public List<Class> get(Object key) {
+
         return adjacencyList.get(key);
     }
 
@@ -43,7 +46,9 @@ public class AdjacencyList {
         return adjacencyList.keySet();
     }
 
+
     public Collection<List<Class>> values() {
+
         return adjacencyList.values();
     }
 

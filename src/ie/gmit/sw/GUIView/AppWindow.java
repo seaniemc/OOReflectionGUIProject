@@ -14,10 +14,11 @@ import java.io.IOException;
 
 public class AppWindow {
 
-
 	private JFrame frame;
 	private AppSummary appS;
+    private AdjacencySummary adJS;
     private ClassList list;
+
 	public AppWindow(){
 		//Create a window for the application
 		frame = new JFrame();
@@ -145,7 +146,8 @@ public class AppWindow {
         JButton btnDialog = new JButton("Show Class Adjacency List"); //Create Quit button
         btnDialog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                appS =  new AppSummary(frame, true);
+
+                adJS = new AdjacencySummary(frame, true);
 
                 Readable jar = new ReadinJarFile();
 
@@ -167,13 +169,13 @@ public class AppWindow {
                 map = pop.fillList(list);
 
                 DependancyData data = new DependancyData();
-                data.getData(map);
+                data.getAdjacData(map);
 
-                TypeSummaryTableModel tstm = appS.getTableModel();
+                AdjacentSummaryTable ast = adJS.getTableModel();
 
-                //tstm.setData(data.);
+                ast.setAdjacData(data.getAdjacData(map));
 
-                appS.show();
+                adJS.setVisible(true);
 			}
         });
         
