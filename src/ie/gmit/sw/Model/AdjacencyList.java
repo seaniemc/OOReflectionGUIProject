@@ -10,14 +10,17 @@ public class AdjacencyList {
     private Map<Class, List<Class>> adjacencyList = new HashMap<>();
 
     public Set<Map.Entry<Class, List<Class>>> entrySet() {
+
         return adjacencyList.entrySet();
     }
 
     public int size() {
+
         return adjacencyList.size();
     }
 
     public boolean isEmpty() {
+
         return adjacencyList.isEmpty();
     }
 
@@ -27,10 +30,12 @@ public class AdjacencyList {
     }
 
     public boolean containsKey(Object key) {
+
         return adjacencyList.containsKey(key);
     }
 
     public List<Class> put(Class key, List<Class> value) {
+
         return adjacencyList.put(key, value);
     }
 
@@ -39,13 +44,14 @@ public class AdjacencyList {
     }
 
     public void clear() {
+
         adjacencyList.clear();
     }
 
     public Set<Class> keySet() {
+
         return adjacencyList.keySet();
     }
-
 
     public Collection<List<Class>> values() {
 

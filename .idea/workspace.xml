@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84b30105-5408-4460-8f12-a59d3a334b00" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/AdjacencyList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/TestRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/TestRunner.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/AdjacencyList.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/Model/AdjacencyList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/CalculateCouplings.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/CalculateCouplings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/Data.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/Data.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/DatabaseConnector.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/DatabaseConnector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/PopulateAdjacency.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/PopulateAdjacency.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/ReadinJarFile.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/Controller/ReadinJarFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/AdjacencySummary.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/AdjacencySummary.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/AppWindow$1.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/AppWindow$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/AppWindow$2.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/AppWindow$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/AppWindow$3.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/AppWindow$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/AppWindow$4.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/AppWindow$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/AppWindow.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/AppWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/Runner$1.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/Runner$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/Runner.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/Runner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/TypeSummaryTableModel.class" afterPath="$PROJECT_DIR$/out/production/OOProjectGui/ie/gmit/sw/GUIView/TypeSummaryTableModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/CalculateCouplings.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/CalculateCouplings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/Data.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/DatabaseConnector.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/DatabaseConnector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/PopulateAdjacency.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/PopulateAdjacency.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/ReadinJarFile.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/Controller/ReadinJarFile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AdjacencySummary.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AdjacencySummary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppSummary.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppSummary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppWindow.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/TypeSummaryTableModel.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/TypeSummaryTableModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/Model/AdjacencyList.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/Model/AdjacencyList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ie/gmit/sw/Model/Measurement.java" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/Model/Measurement.java" />
     </list>
     <ignored path="OOProjectGui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,27 +29,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CalculateCouplings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/CalculateCouplings.java">
+      <file leaf-file-name="AppWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="126" column="46" selection-start-line="126" selection-start-column="46" selection-end-line="126" selection-end-column="46" />
-              <folding />
+            <state relative-caret-position="491">
+              <caret line="170" column="32" selection-start-line="170" selection-start-column="32" selection-end-line="170" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdjacencySummary.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AdjacencySummary.java">
+      <file leaf-file-name="CustomControl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/CustomControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+            <state relative-caret-position="255">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2734#2881#0" expanded="true" />
-                <element signature="e#2880#2881#0" expanded="true" />
-                <marker date="1484065590226" expanded="true" signature="894:940" ph="//..." />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TypeSummaryTableModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/TypeSummaryTableModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding>
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#446#447#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Measurement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Model/Measurement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="7" column="84" selection-start-line="7" selection-start-column="84" selection-end-line="7" selection-end-column="84" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,18 +80,31 @@
       <file leaf-file-name="AdjacencyList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Model/AdjacencyList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-123">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="153">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseConnector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/DatabaseConnector.java">
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="e#135#204#0" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/Data.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,22 +112,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadinJarFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/ReadinJarFile.java">
+      <file leaf-file-name="AdjacencySummary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AdjacencySummary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassMap.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/ClassMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-470">
+              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2851#2998#0" expanded="true" />
+                <element signature="e#2997#2998#0" expanded="true" />
+                <marker date="1484075698121" expanded="true" signature="922:968" ph="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,33 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/Data.java">
+      <file leaf-file-name="AdjacentSummaryTable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AdjacentSummaryTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PopulateAdjacency.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/PopulateAdjacency.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1377">
-              <caret line="24" column="91" selection-start-line="24" selection-start-column="91" selection-end-line="24" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Readable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/Readable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -212,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/CustomControl.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/ClassMap.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java" />
-        <option value="$PROJECT_DIR$/src/ie/gmit/sw/Model/Measurement.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/DatabaseConector.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/ClassAdjacencyList.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/DependancyList.java" />
@@ -224,15 +206,16 @@
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/DependancyData.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/StabilityData.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppWindow.java" />
-        <option value="$PROJECT_DIR$/src/ie/gmit/sw/Model/AdjacencyList.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/DatabaseConnector.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/Data.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/PopulateAdjacency.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/CalculateCouplings.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/Readable.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/Controller/ReadinJarFile.java" />
-        <option value="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AdjacencySummary.java" />
         <option value="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppSummary.java" />
+        <option value="$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AdjacencySummary.java" />
+        <option value="$PROJECT_DIR$/src/ie/gmit/sw/Model/AdjacencyList.java" />
+        <option value="$PROJECT_DIR$/src/ie/gmit/sw/Model/Measurement.java" />
       </list>
     </option>
   </component>
@@ -900,12 +883,12 @@
       <workItem from="1483966992084" duration="1427000" />
       <workItem from="1483970870600" duration="18600000" />
       <workItem from="1484044867099" duration="9775000" />
-      <workItem from="1484058248395" duration="6701000" />
+      <workItem from="1484058248395" duration="8516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150381000" />
+    <option name="totallyTimeSpent" value="152196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1000,14 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/ClassAdjacencyList.java" />
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1040,59 +1015,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AdjacentSummaryTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/DependancyData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/TypeSummaryTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="170" column="32" selection-start-line="170" selection-start-column="32" selection-end-line="170" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2850#4024#0" expanded="true" />
-            <element signature="e#4023#4024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/CustomControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Model/Measurement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1113,14 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Model/AdjacencyList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-123">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/DatabaseConnector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1136,16 +1054,6 @@
         <state relative-caret-position="83">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1173,6 +1081,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AdjacencySummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-470">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2851#2998#0" expanded="true" />
+            <element signature="e#2997#2998#0" expanded="true" />
+            <marker date="1484075698121" expanded="true" signature="922:968" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AdjacentSummaryTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppSummary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
@@ -1183,15 +1112,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AdjacencySummary.java">
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/AppWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+        <state relative-caret-position="491">
+          <caret line="170" column="32" selection-start-line="170" selection-start-column="32" selection-end-line="170" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2734#2881#0" expanded="true" />
-            <element signature="e#2880#2881#0" expanded="true" />
-            <marker date="1484065590226" expanded="true" signature="894:940" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/CustomControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding>
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#135#204#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/GUIView/TypeSummaryTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Model/Measurement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="7" column="84" selection-start-line="7" selection-start-column="84" selection-end-line="7" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Model/AdjacencyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ie/gmit/sw/Controller/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

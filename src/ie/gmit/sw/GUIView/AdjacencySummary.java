@@ -4,13 +4,15 @@ package ie.gmit.sw.GUIView;
  * Created by Sean on 10/01/2017.
  */
 
-import ie.gmit.sw.GUIView.TypeSummaryTableModel;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.table.*;
 
+/**
+ * This Class is used to display the results of the
+ * adjacency list
+ */
 public class AdjacencySummary extends JDialog {
 
     private static final long serialVersionUID = 777L;
@@ -40,11 +42,15 @@ public class AdjacencySummary extends JDialog {
         c.add(buttonPanel);
     }
 
+    //used to create the table model.
     public AdjacentSummaryTable getTableModel(){
 
         return ast;
     }
 
+    /**
+     * creates the table structure
+     */
     private void createTable() {
         ast = new AdjacentSummaryTable();
         table = new JTable(ast);
