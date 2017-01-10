@@ -2,6 +2,7 @@ package ie.gmit.sw.GUIView;
 
 import ie.gmit.sw.Controller.*;
 import ie.gmit.sw.Controller.Readable;
+import ie.gmit.sw.Model.AdjacencyList;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;

@@ -27,6 +27,13 @@ public class CalculateCouplings {
         getEfferent(mylist);
     }
 
+    /**
+     * The getEfferent method takes in a list of classes and calculates the efferent coupling
+     * of the class adds the score to the measurement object which gets added to the
+     * ClassMap
+     * @param list
+     * @return ClassMap
+     */
     public ClassMap getEfferent(ClassList list){
         map = new ClassMap();
 
@@ -99,18 +106,11 @@ public class CalculateCouplings {
 
             Name = cla.getName();
 
-            //pass the the class name into setClassName
-            /*measure;
-
-            //pass in the efferentCoupling for the class
-            measure.setEfferentCoupling();
-            //pass in the afferentCoupling for the class
-            measure.setAfferentCoupling();*/
             measure = new Measurement(efferentCoupling,afferentCoupling,Name);
-            //System.out.println(measure.getStability());
+
             cla = list.getMyClass(i);
 
-            //put the class(key) measure (value)
+            //put the class(key) measure(value)
             map.put(cla, measure);
 
         }//end for
@@ -122,6 +122,13 @@ public class CalculateCouplings {
         return map;
     }//getAfferent
 
+    /**
+     *takes in a list of classes and a string: class name. The method cycles through the classes
+     * to check the afferent coupling of the string class name.
+     * @param list
+     * @param name
+     * @return int afferent
+     */
 
     //method passes in the ClassList and the class name to be checked
     public int getAfferent(ClassList list, String name){

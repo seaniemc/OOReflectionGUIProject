@@ -1,6 +1,6 @@
 package ie.gmit.sw.Controller;
 
-import ie.gmit.sw.GUIView.TypeSummaryTableModel;
+import ie.gmit.sw.Model.AdjacencyList;
 import ie.gmit.sw.Model.Measurement;
 
 import java.util.Iterator;
@@ -8,6 +8,10 @@ import java.util.Map;
 
 /**
  * Created by Sean on 08/01/2017.
+ */
+
+/**
+ * This class is responible for retiving the data need for the tables in the GUI
  */
 public class Data {
 
@@ -19,7 +23,12 @@ public class Data {
         super();
     }
 
-
+    /**
+     * Takes a map as a paramater and returns a 2 dimensional Object, array with
+     * the contents of the map values.
+     * @param map
+     * @return Object[][]
+     */
     public Object[][] getData(ClassMap map) {
         int i = 0;
         Object[][] data = new Object[map.size()][4];
@@ -38,6 +47,12 @@ public class Data {
         return data;
     }
 
+    /**
+     *Takes a map as a paramater and returns a 2 dimensional Object array, with
+     * the map key's and values.
+     * @param aList
+     * @return Object[][]
+     */
     public Object[][] getAdjacData(AdjacencyList aList) {
         int i = 0;
         Object[][] data = new Object[aList.size()][2];

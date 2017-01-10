@@ -1,6 +1,6 @@
 package ie.gmit.sw.Controller;
 
-import ie.gmit.sw.Model.Measurement;
+import ie.gmit.sw.Model.AdjacencyList;
 
 import java.lang.reflect.*;
 import java.util.ArrayList;
@@ -21,23 +21,29 @@ public class PopulateAdjacency {
         super();
     }
 
+    /**
+     * Cycles through the class list and creates an adjacency list i.e list of dependancies
+     * @param list
+     * @return
+     */
     public AdjacencyList fillList (ClassList list){
 
         adList = new AdjacencyList();
 
         for (int i = 0; i < list.size(); i++) {
 
+            //create a new lis each loop
             List<Class> depList = new ArrayList<Class>();
-            //Get the class needed for efferent inspection
+
             Class cla = list.getMyClass(i);
 
-            if(!(cla.isInterface() || Modifier.isAbstract(cla.getModifiers()))){
+
+            /*if(!(cla.isInterface() || Modifier.isAbstract(cla.getModifiers()))){
                 depList.add(cla);
-            }
+            }*/
             //get the interfaces from the class
             Class[] interfaces = cla.getInterfaces();
 
-            //if the class implements any interfaces increment efferent
             for(Class inter : interfaces){
 
                 //if the interface is part of the list
@@ -57,6 +63,7 @@ public class PopulateAdjacency {
                 }
 
             }
+
             Constructor[] cons = cla.getConstructors();
             Class[] conParams;
 
@@ -122,17 +129,15 @@ public class PopulateAdjacency {
                 params = meth.getParameterTypes(); //Get method parameters
                 for(Class mp : params){
 
-                    //System.out.println("Method Param: " + mp.getName());
-
                     if(list.contains(mp)){
 
-                        // add class to adjacency list (ie increment outdegree)
+                        // add class to dependancy list
                         depList.add(mp);
 
                     } // if
                 } // foreach
             }
-
+            //add the Class(Key) List(Value) to Map
             adList.put(cla, depList);
         }//end for
         return adList;

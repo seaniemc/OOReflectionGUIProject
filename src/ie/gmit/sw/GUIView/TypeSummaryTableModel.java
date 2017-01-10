@@ -1,7 +1,5 @@
 package ie.gmit.sw.GUIView;
 
-import ie.gmit.sw.Controller.AdjacencyList;
-
 import javax.swing.table.*;
 public class TypeSummaryTableModel extends AbstractTableModel{
 

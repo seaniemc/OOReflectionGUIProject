@@ -25,7 +25,7 @@ public class AdjacencySummary extends JDialog {
     public AdjacencySummary(JFrame parent, boolean modal){
 
         super(parent, modal);
-        super.setTitle("Summary");
+        super.setTitle("Adjacency List");
         super.setResizable(true);
 
         this.setSize(new Dimension(800, 500));
@@ -61,14 +61,14 @@ public class AdjacencySummary extends JDialog {
                 column.setMaxWidth(180);
                 column.setMinWidth(180);
             } else {
-                column.setPreferredWidth(600);
-                column.setMaxWidth(600);
-                column.setMinWidth(600);
+                column.setPreferredWidth(400);
+                column.setMaxWidth(400);
+                column.setMinWidth(400);
             }
         }
 
         tableScroller = new JScrollPane(table);
-        tableScroller.setPreferredSize(new java.awt.Dimension(485, 235));
+        tableScroller.setPreferredSize(new java.awt.Dimension(475, 500));
         tableScroller.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
 
         tablePanel.add(tableScroller, FlowLayout.LEFT);

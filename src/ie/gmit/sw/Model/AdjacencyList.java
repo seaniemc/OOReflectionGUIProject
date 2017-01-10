@@ -1,4 +1,4 @@
-package ie.gmit.sw.Controller;
+package ie.gmit.sw.Model;
 
 import java.util.*;
 

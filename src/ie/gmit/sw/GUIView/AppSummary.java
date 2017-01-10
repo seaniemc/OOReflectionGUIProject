@@ -53,9 +53,9 @@ public class AppSummary extends JDialog{
 		for (int i = 0; i < table.getColumnCount(); i++){
 			column = table.getColumnModel().getColumn(i);
 			if (i == 0){
-				column.setPreferredWidth(120);
-				column.setMaxWidth(120);
-				column.setMinWidth(120);
+				column.setPreferredWidth(180);
+				column.setMaxWidth(180);
+				column.setMinWidth(180);
 			}else{
 				column.setPreferredWidth(100);
 				column.setMaxWidth(100);
