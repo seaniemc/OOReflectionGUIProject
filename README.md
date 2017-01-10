@@ -13,6 +13,9 @@ This program utiles the Reflection API, to calculate the Positional Stability(1)
 
 ##Deploy Application
 
-*To run this program you need Java 8 installed. 
-*Open command prompt, navigate to OOReflectionGUIProject
-*
+* To run this program you need Java 8 installed.  
+* Open command prompt, navigate to OOReflectionGUIProject
+```
+java -cp ./bin:./lib/test-jar.jar ie.gmit.sw.launch.Runner ./lib/test-jar.jar
+
+```
