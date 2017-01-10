@@ -2,7 +2,7 @@ package ie.gmit.sw.GUIView;
 
 import ie.gmit.sw.Controller.*;
 import ie.gmit.sw.Controller.Readable;
-import ie.gmit.sw.GUIView.CustomControl;
+import ie.gmit.sw.Model.AdjacencyList;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
@@ -14,14 +14,15 @@ import java.io.IOException;
 
 public class AppWindow {
 
-
 	private JFrame frame;
 	private AppSummary appS;
+    private AdjacencySummary adJS;
+    private ClassList list;
 
 	public AppWindow(){
 		//Create a window for the application
 		frame = new JFrame();
-		frame.setTitle("B.Sc. in Software Development - GMIT");
+		frame.setTitle("G00316649 Sean McGrath - GMIT");
 		frame.setSize(550, 500);
 		frame.setResizable(false);
 		frame.setLayout(new FlowLayout());
@@ -71,7 +72,7 @@ public class AppWindow {
         });
 		
 		JButton btnOther = new JButton("Calculate Stability");
-		btnOther.setToolTipText("Do Something");
+		btnOther.setToolTipText("Stability");
 		btnOther.setPreferredSize(new java.awt.Dimension(150, 30));
 		btnOther.setMaximumSize(new java.awt.Dimension(150, 30));
 		btnOther.setMargin(new java.awt.Insets(2, 2, 2, 2));
@@ -85,7 +86,7 @@ public class AppWindow {
                 Readable jar = new ReadinJarFile();
 
                 //Create a new instance of ClassList
-                ClassList list = new ClassList();
+                list = new ClassList();
 
                 //Call jar.init Method and pass in Jr file name
                 try {
@@ -95,18 +96,22 @@ public class AppWindow {
                 } catch (NoSuchMethodException e) {
                     e.printStackTrace();
                 }
-
+                //creates an instance of ClassMap
                 ClassMap map = new ClassMap();
+
                 //create new instance of CalculateCouplings
                 CalculateCouplings cal = new CalculateCouplings();
 
                 map = cal.getEfferent(list);
 
-                StabilityData stabD = new StabilityData();
+                //creates an instance of the Data object
+                Data stabD = new Data();
                 stabD.getData(map);
 
+                //gets the table model
                 TypeSummaryTableModel tstm = appS.getTableModel();
 
+                //sets the table model with data from the stabD Data object
                 tstm.setData(stabD.getData(map));
 
                 appS.setVisible(true);
@@ -142,11 +147,41 @@ public class AppWindow {
         bottom.setMaximumSize(new java.awt.Dimension(500, 50));
         bottom.setMinimumSize(new java.awt.Dimension(500, 50));
         
-        JButton btnDialog = new JButton("Show Dialog"); //Create Quit button
+        JButton btnDialog = new JButton("Show Class Adjacency List"); //Create Quit button
         btnDialog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-            	AppSummary as =  new AppSummary(frame, true);
-            	as.show();
+
+                adJS = new AdjacencySummary(frame, true);
+
+                //Calls the ReadinJarFile
+                Readable jar = new ReadinJarFile();
+
+                //Create a new instance of ClassList
+                list = new ClassList();
+
+                //Call jar.init Method and pass in Jr file name
+                try {
+                    list = jar.init(txtFileName.getText());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (NoSuchMethodException e) {
+                    e.printStackTrace();
+                }
+                //Creates an instance of the AdjacencyList
+                AdjacencyList map = new AdjacencyList();
+
+                PopulateAdjacency pop = new PopulateAdjacency();
+                //Populates the Hashmao with the Adjacency list
+                map = pop.fillList(list);
+
+                Data data = new Data();
+                data.getAdjacData(map);
+
+                AdjacentSummaryTable ast = adJS.getTableModel();
+
+                ast.setAdjacData(data.getAdjacData(map));
+
+                adJS.setVisible(true);
 			}
         });
         

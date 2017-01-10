@@ -7,11 +7,20 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-
+/**
+ * Class reads a jar file and adds the resultd to the ClassList object.
+ */
 public class ReadinJarFile implements Readable {
 
 	private static ClassList list;
-	
+
+	/**
+	 *
+	 * @param jarName
+	 * @return list ie: ClassList
+	 * @throws IOException
+	 * @throws NoSuchMethodException
+	 */
 	public ClassList init(String jarName) throws IOException, NoSuchMethodException {
 
 		list = new ClassList();

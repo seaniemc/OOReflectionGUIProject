@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * Created by Sean on 05/01/2017.
+ * Class store's the Afferent and Efferent coupling along with the Stability Metric.
  */
 public class Measurement {
 
@@ -19,30 +20,38 @@ public class Measurement {
     }
 
     public Measurement(){
+
         super();
     }
-    
+
     public int getEfferentCoupling() {
+
         return efferentCoupling;
     }
 
     public void setEfferentCoupling(int efferentCoupling) {
+
+
         this.efferentCoupling = efferentCoupling;
     }
 
     public int getAfferentCoupling() {
+
         return afferentCoupling;
     }
 
     public void setAfferentCoupling(int afferentCoupling) {
+
         this.afferentCoupling = afferentCoupling;
     }
 
     public String getClassName() {
+
         return className;
     }
 
     public void setClassName(String className) {
+
         this.className = className;
     }
 
