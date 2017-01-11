@@ -85,15 +85,15 @@ The reflection API is used to gather data about the classes. It analysis the cla
 
 
 #References
-http://tutorials.jenkov.com/java-reflection/index.html
-https://www.youtube.com/watch?v=agnblS47F18
-http://www.newthinktank.com/2012/09/java-reflection-video-tutorial/
+http://tutorials.jenkov.com/java-reflection/index.html  
+https://www.youtube.com/watch?v=agnblS47F18  
+http://www.newthinktank.com/2012/09/java-reflection-video-tutorial/  
 
-http://www.headfirstlabs.com/books/hfdp/
-https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm
-http://www.tutorialspoint.com/swing/
+http://www.headfirstlabs.com/books/hfdp/  
+https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm  
+http://www.tutorialspoint.com/swing/  
 
-http://www.odbms.org/wp-content/uploads/2013/11/db4o-7.10-tutorial-java.pdf
+http://www.odbms.org/wp-content/uploads/2013/11/db4o-7.10-tutorial-java.pdf  
 
 
 
